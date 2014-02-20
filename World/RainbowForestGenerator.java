@@ -35,7 +35,7 @@ public class RainbowForestGenerator extends WorldGenerator {
 					if (ModList.THAUMCRAFT.isLoaded() && DyeOptions.ETHEREAL.getState()) {
 						for (int i = 0; i < 8; i++) {
 							int dx = ReikaRandomHelper.getRandomPlusMinus(x, 6);
-							int dz = ReikaRandomHelper.getRandomPlusMinus(x, 6);
+							int dz = ReikaRandomHelper.getRandomPlusMinus(z, 6);
 							int dy = world.getTopSolidOrLiquidBlock(dx, dz);
 							if (ReikaWorldHelper.softBlocks(world, dx, dy, dz)) {
 								int id = ThaumBlockHandler.getInstance().plantID;
